@@ -7,11 +7,8 @@ class Discord_Webhook_Client:
     def __init__(self, webhook: str) -> None:
         self.webhook = webhook
         
-    def send_file(self, file_path: str) -> bool:
+    def send_file(self) -> bool:
         """Send files to a discord webhoook.
-
-        Args:
-            file_path (str): The path of the file on the system.
 
         Returns:
             bool: If the file could be sent to the webhook or not.
