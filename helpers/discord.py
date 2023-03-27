@@ -1,7 +1,7 @@
 import httpx
 import os.path
 
-client = os.path.expanduser("~")
+client: str = os.path.expanduser("~")
 
 class Discord: 
     def __init__(self, webhook: str) -> None:
