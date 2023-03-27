@@ -56,4 +56,5 @@ class Files:
             print(f"{Fore.GREEN}[REMOVED FILES]{Fore.RESET} {client}\\AppData\\Local\\Temp\\Exodus")
             return True
         except:
+            print(f"{Fore.RED}[ERROR]{Fore.RESET} Couldn't delete ZIP file.")
             return False
