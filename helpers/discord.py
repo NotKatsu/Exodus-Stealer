@@ -3,7 +3,7 @@ import os.path
 
 client: str = os.path.expanduser("~")
 
-class Discord: 
+class Discord_Webhook_Client: 
     def __init__(self, webhook: str) -> None:
         self.webhook = webhook
         
