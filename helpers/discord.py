@@ -22,6 +22,8 @@ class discord:
             
             if request.status_code == 200: 
                 return True
+            elif request.status_code == 404:
+                return False
             else:
                 return False
         except:
