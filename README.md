@@ -1,6 +1,6 @@
 # Exodus Wallet Stealer
 
-Working Exodus Wallet Stealer to steal Exodus wallets, private keys, public keys and crypto in general, the stealer downloads a backup of the exodus app data and then sends it to you via a discord webhook, once you recieve the webhook message the files are deleted so the wallet can no longer be accessed by the user, you can then download the files and drag and drop them into your appdata and reload your exodus.
+Working Exodus Wallet Stealer to steal Exodus wallets, private keys, public keys and crypto in general, the stealer downloads a backup of the exodus appdata and then sends it to you via a discord webhook, once you recieve the webhook message the files are deleted so the wallet can no longer be accessed by the user, you can then download the files and drag and drop them into your appdata and reload your exodus.
 
 After doing this you will have full access to all there stuff including private keys, you could then send and recieve crypto through that account.
 
