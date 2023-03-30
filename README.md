@@ -6,6 +6,9 @@ After doing this you will have full access to all there stuff including private 
 
 The program once compiled properly is not detected by Anti-Virus at all and this makes it very dangerous malware.
 
+I have created an interesting post about this Malware on my website were we go over how to install and prevent it.
+https://www.katsu.bio/posts/oLWGiZkBqjC6BpZz
+
 ## Video
 https://user-images.githubusercontent.com/122122838/228079770-cb0463dc-4afe-4e29-89d5-148389b54730.mp4
 
