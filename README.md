@@ -33,4 +33,4 @@ python3 stealer.py
 I recommend that you compile this if you wanted to actually use it and this is what cybercrimals would do however I am not gonna show how you can do this as this project is just a proof of concept and supposed to help fight against malware not make it spread more.
 
 ## NOTE:
-This malware is supposed to explain and show how the malware would operate in a manor that allows the user to run it themselves without causing danage, I do not condone spreading or compiling with the intention to spread this malware and will not and have not shown how to compile it properly and have made it so it is not a complete version of malware. 
+This program is made to show how malware might work in a way that is safe for the user to run on their machine without causing any damages. I do not condone the spread or compilation of harmful malware, and have not shown how to compile it properly. This is simply a proof of concept.
